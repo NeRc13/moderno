@@ -2,26 +2,28 @@
 @import "vars";
 @import "fonts";
 
-
-.header__body{
+.header__body {
     display: flex;
     justify-content: space-between;
     height: 90px;
     align-items: center;
 }
-.header__box{
+.header__box {
     display: flex;
-    .header__text{
+    .header__text {
         line-height: 30px;
         margin-right: 50px;
         font-size: 15px;
         color: $color-text;
-        span{
+        a {
+            color: $color-text;
+        }
+        span {
             color: $red;
         }
     }
 }
-.header__btn a{
+.header__btn a {
     display: inline-block;
     color: #fff;
     padding: 9px;
@@ -30,31 +32,79 @@
     text-align: center;
     border-radius: 4px;
 }
-.header__btn a:first-child{
+.header__btn a:first-child {
     background-color: $green;
 }
-.header__btn a:last-child{
+.header__btn a:last-child {
     background-color: $red;
     margin-left: 7px;
 }
-.header__menu{
+.header__menu {
     background-color: $bg;
-    .menu{
-    height: 60px;
-    display: flex;
-    align-items: center;
+    .menu {
+        height: 60px;
+        display: flex;
+        align-items: center;
     }
-    .header__list{
-        li{
-        display: inline-block;
-        & + li{
-          margin-left: 40px;
+    .header__list {
+        li {
+            display: inline-block;
+            & + li {
+                margin-left: 40px;
+            }
         }
+        a {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
         }
-    a{
-        color: #fff;
-        font-size: 14px;
+    }
+}
+.search {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 533px;
+}
+.search__body {
+    padding: 155px 0 100px;
+    color: #fff;
+    text-align: center;
+    &-title {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 28px;
+    }
+    &-text {
+        margin-bottom: 50px;
+        font-size: 20px;
         font-weight: 500;
-    }  
+    }
+    &-form {
+        max-width: 670px;
+        margin: 0 auto;
+        position: relative;
+        input {
+            display: block;
+            border-radius: 4px;
+            box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+            height: 56px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: 500;
+            padding-left: 25px;
+            padding-right: 60px;
+            &::placeholder{
+                color: #90a4ae;
+                letter-spacing: .5px;
+            }
+        }
+        button{
+            position: absolute;
+            top: 18px;
+            right: 20px;
+            border: none;
+            background-color: transparent;
+        }
     }
 }
