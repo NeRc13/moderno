@@ -74,8 +74,8 @@ h6 {
     font-weight: inherit;
 }
 /*--------------------*/
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 15px;
 }
@@ -83,4 +83,26 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+.container-fluid {
+    min-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+@media (max-width: 720px) {
+    .container-fluid {
+        padding: 0 15px;
+    }
+}
+.title{
+    color: #263238;;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.rate-star{
+    display: inline-block;
+    margin-right: 13px;
+    
 }
