@@ -126,7 +126,7 @@
         & + button {
             margin-left: 5px;
         }
-        &.mixitup-control-active{
+        &.mixitup-control-active {
             color: #fff;
             background-color: $red;
         }
@@ -206,10 +206,10 @@
             font-weight: 500;
         }
     }
-    &-star{
+    &-star {
         color: #b0bec5;
         font-size: 12px;
-        span{
+        span {
             color: $bg;
         }
     }
@@ -225,7 +225,7 @@
         & + button {
             margin-left: 10px;
         }
-        &.mixitup-control-active{
+        &.mixitup-control-active {
             color: #fff;
             background-color: $red;
         }
@@ -234,21 +234,21 @@
 
 // end product
 // start slider
-.product__slider{
+.product__slider {
     padding: 110px 0;
-    .slick-dots{
+    .slick-dots {
         text-align: center;
         margin-top: 40px;
-        li{
+        li {
             display: inline-block;
             margin-right: 3px;
             margin-left: 3px;
-            &.slick-active{
-                button{
+            &.slick-active {
+                button {
                     background-color: $green;
                 }
             }
-            button{
+            button {
                 border-radius: 50%;
                 width: 16px;
                 height: 16px;
@@ -259,3 +259,63 @@
     }
 }
 // end slider
+// start why
+.why {
+    background-color: $bg;
+    padding: 120px 0;
+    &__title {
+        color: #fff;
+    }
+}
+.why__body {
+    display: flex;
+    justify-content: space-around;
+}
+.why__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    &:hover {
+        .why__item-icon {
+            background-color: $green;
+        }
+        &:hover .why__item-title {
+            color: $green;
+        }
+        .svg {
+            stroke: #fff;
+            fill: #fff;
+        }
+    }
+    &-icon {
+        width: 114px;
+        height: 114px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 35px;
+        transition: 0.5s;
+    }
+    &-title {
+        font-size: 24px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 25px;
+        transition: 0.5s;
+    }
+    &-text {
+        color: #b0bec5;
+        line-height: 24px;
+        max-width: 318px;
+        text-align: center;
+    }
+}
+.svg {
+    transition: 0.5s;
+}
+
+// end why
