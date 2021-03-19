@@ -274,7 +274,6 @@
 .why__item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 0 15px;
     &:hover {
@@ -317,5 +316,43 @@
 .svg {
     transition: 0.5s;
 }
-
 // end why
+// start author
+.author {
+    min-height: 750px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__box {
+        min-height: 220px;
+        max-width: 650px;
+        width: 100%;
+        background-color: $green;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 60px;
+    }
+    &__text {
+        max-width: 260px;
+        font-size: 30px;
+        color: #fff;
+        line-height: 36px;
+        margin-right: 45px;
+        span {
+            font-weight: 700;
+        }
+    }
+    &__link {
+        background-color: rgb(255, 255, 255);
+        display: block;
+        padding: 25px 40px;
+        font-size: 18px;
+        color: $bg;
+    }
+}
+
+// end author
