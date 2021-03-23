@@ -356,22 +356,22 @@
 }
 // end author
 // tutorial start
-.tutorial{
+.tutorial {
     padding: 70px 0 120px;
-    &__body{
+    &__body {
         display: flex;
         justify-content: space-between;
     }
 }
-.tutorial__item{
+.tutorial__item {
     flex: 0 1 370px;
-    &-img{
+    &-img {
         min-height: 270px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
-    &-title{
+    &-title {
         font-weight: 700;
         font-size: 24px;
         color: $bg;
@@ -381,3 +381,163 @@
     }
 }
 // end tutorial
+// start footer
+.footer {
+    background-color: $bg;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0 80px;
+    }
+}
+.footer__item {
+    max-width: 270px;
+    &-menu {
+        min-width: 220px;
+    }
+    &-title {
+        font-size: 22px;
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 50px;
+            height: 3px;
+            background-color: $green;
+            bottom: 0;
+            left: 2px;
+        }
+    }
+    &-text {
+        color: #b7c3c8;
+        line-height: 24px;
+        margin-bottom: 35px;
+    }
+}
+.footer__info {
+    color: #fff;
+    padding-left: 30px;
+    font-size: 14px;
+    &-adress {
+        margin-bottom: 18px;
+        line-height: 24px;
+        position: relative;
+        &::before {
+            content: "\f041";
+            font-family: "icomoon";
+            color: $green;
+            position: absolute;
+            font-size: 18px;
+            // top: 0;
+            left: -30px;
+        }
+    }
+    &-tel {
+        color: #fff;
+        position: relative;
+        &::before {
+            content: "\f095";
+            font-family: "icomoon";
+            color: $green;
+            position: absolute;
+            font-size: 18px;
+            top: 0;
+            left: -30px;
+        }
+    }
+}
+.footer__item-list {
+    a {
+        display: block;
+        margin-bottom: 17px;
+        color: #b7c3c8;
+        position: relative;
+        padding-left: 23px;
+        &::before {
+            content: "\f105";
+            font-family: "icomoon";
+            color: $green;
+            position: absolute;
+            font-size: 18px;
+            top: -4px;
+            left: 0;
+        }
+    }
+}
+.footer__item-social {
+    margin-bottom: 33px;
+    li {
+        display: inline-block;
+        & + li {
+            margin-left: 7px;
+        }
+    }
+    a {
+        display: block;
+        width: 28px;
+        height: 28px;
+        background-image: url(../images/css_sprites.png);
+    }
+}
+.link-facebook {
+    background-position: -0 -0;
+}
+.link-twitter {
+    background-position: -28px -0;
+}
+.link-youtube {
+    background-position: -0 -28px;
+}
+.link-pinterest {
+    background-position: -28px -28px;
+}
+.link-linkedin {
+    background-position: -56px -0;
+}
+.footer__form-title {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+form {
+    display: flex;
+}
+.footer__form {
+    input {
+        display: block;
+        width: 100%;
+        background-color: rgb(47, 60, 67);
+        height: 40px;
+        font-size: 14px;
+        color: #fff;
+        padding-left: 13px;
+        padding-right: 50px;
+        &::placeholder {
+            color: #697378;
+        }
+    }
+    button {
+        background-color: $green;
+        height: 40px;
+        flex: 0 0 43px;
+        &::before {
+            content: "\f124";
+            font-family: "icomoon";
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+}
+
+.footer__bottom {
+    text-align: center;
+    color: #919699;
+    border-top: 1px solid #424d53;
+    padding: 25px 0 30px;
+}
+// end footer
