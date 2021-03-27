@@ -158,8 +158,17 @@
     }
 }
 @media (max-width: 350px) {
-    .cart__menu {
-        left: -30px;
+    .cart {
+        margin-right: 7px;
+        &__box {
+            margin-left: 10px;
+        }
+        &__menu {
+            left: -30px;
+        }
+    }
+    .header__btn a {
+        width: 70px;
     }
 }
 @media (min-width: 901px) {

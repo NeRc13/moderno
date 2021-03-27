@@ -65,6 +65,7 @@
     }
 }
 .cart {
+    margin-right: 20px;
     span {
         background-color: $green;
     }
@@ -83,7 +84,7 @@
     }
 }
 .user {
-    margin-left: 20px;
+    // margin-left: 20px;
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -380,6 +381,9 @@
     background-color: $red;
     margin-left: 7px;
 }
+.off {
+    display: none;
+}
 .header__btn .header__btn-login--off {
     display: none;
 }
@@ -412,7 +416,7 @@
         }
     }
 }
-.mobile__menu{
+.mobile__menu {
     display: none;
 }
 // end header
