@@ -124,6 +124,7 @@
     right: 0px;
     width: 158px;
     position: absolute;
+    z-index: 2;
     padding: 0px 20px;
     border: 0px solid #cdcdcd;
     transition: all 0.3s;
@@ -158,6 +159,7 @@
 }
 .cart__menu {
     position: absolute;
+    z-index: 2;
     background-color: rgb(255, 255, 255);
     top: 61px;
     right: 0px;
@@ -240,6 +242,7 @@
 }
 .message__menu {
     position: absolute;
+    z-index: 2;
     background-color: rgb(255, 255, 255);
     top: 61px;
     right: 0px;
@@ -311,6 +314,7 @@
 }
 .notification__menu {
     position: absolute;
+    z-index: 2;
     background-color: rgb(255, 255, 255);
     top: 61px;
     right: 0px;
@@ -387,12 +391,14 @@
 }
 .header__menu {
     background-color: $bg;
+    // z-index: 1;
     .menu {
         height: 60px;
         display: flex;
         align-items: center;
     }
     .header__list {
+        z-index: 1;
         li {
             display: inline-block;
             & + li {
@@ -405,6 +411,9 @@
             font-weight: 500;
         }
     }
+}
+.mobile__menu{
+    display: none;
 }
 // end header
 // start search section
@@ -738,6 +747,7 @@
 }
 .footer__item {
     max-width: 270px;
+    padding: 0 15px;
     &-menu {
         min-width: 220px;
     }
@@ -887,3 +897,5 @@ form {
     padding: 25px 0 30px;
 }
 // end footer
+
+@import "media";

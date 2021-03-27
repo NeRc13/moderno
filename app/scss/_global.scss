@@ -78,6 +78,8 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 15px;
+    overflow-x: hidden;
+    position: relative;
 }
 .container {
     max-width: 1200px;
