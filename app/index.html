@@ -204,7 +204,7 @@
               </div>
             </div>
             <div class="header__btn">
-              <a class="header__btn-login" href="#">Login</a>
+              <a class="header__btn-login" data-fancybox data-src="#modal" href="javascript:;">Login</a>
               <a class="header__btn-logout header__btn-login--off" href="#">Logout</a>
               <a class="header__btn-register" href="#">Register</a>
             </div>
@@ -1106,6 +1106,23 @@
       © 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.
     </div>
   </footer>
+
+  <div id="modal">
+    <div class="login__title">Login</div>
+    <div class="login__body">
+      <form>
+        <label class="icon-user">
+          <input type="text" placeholder="Name" required>
+        </label>
+        <label class="icon-lock">
+          <input type="password" placeholder="Password" required>
+        </label>
+        <button type="submit">Submit</button>
+        <a class="icon-edit creat-acc" href="#">Creat An Account?</a>
+        <a class="lost-pass" href="#">Lost Password?</a>
+      </form>
+    </div>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
