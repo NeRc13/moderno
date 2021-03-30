@@ -35,6 +35,8 @@ body {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
 input,
 button,
@@ -94,15 +96,26 @@ body {
         padding: 0 15px;
     }
 }
-.title{
-    color: #263238;;
+.title {
+    color: #263238;
     font-weight: 700;
     font-size: 36px;
     margin-bottom: 60px;
     text-align: center;
 }
-.rate-star{
+.rate-star {
     display: inline-block;
     margin-right: 13px;
-    
+}
+.angle-right {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+        content: "\f105";
+        font-family: "icomoon";
+        color: #8bc34a;
+        font-size: 14px;
+        position: absolute;
+        left: 0;
+    }
 }
