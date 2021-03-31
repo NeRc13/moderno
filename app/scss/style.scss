@@ -1303,49 +1303,117 @@ form {
 .author__awards-list {
     display: flex;
     justify-content: space-between;
-    li{
+    li {
         position: relative;
-        span{
+        span {
             position: absolute;
             top: 40%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             color: #fff;
             font-size: 20px;
         }
     }
 }
-.aside__item-sale{
+.aside__item-sale {
     font-size: 16px;
     color: #707070;
     // font-weight: 300;
-    span{
+    span {
         font-weight: 700;
         font-size: 20px;
         color: $bg;
         margin-right: 15px;
-        &::before{
-            content: '\f07a';
+        &::before {
+            content: "\f07a";
             font-family: "icomoon";
             color: #a6b5bb;
             margin-right: 20px;
         }
     }
 }
-.information__box{
+.information__box {
     padding-top: 18px;
     padding-bottom: 5px;
 }
-.information__line{
+.information__line {
     font-size: 14px;
     line-height: 36px;
     color: #70838d;
-    letter-spacing: -.5px;
-    span{
+    letter-spacing: -0.5px;
+    span {
         font-weight: 500;
         color: $bg;
     }
 }
 // end product-one__aside
+// start page__error
+.page__error {
+    background-color: $grey;
+    padding-bottom: 150px;
+    &-wrapper {
+        border: 1px solid #dedede;
+        background-color: #fff;
+    }
+    &-head {
+        font-size: 24px;
+        font-weight: 500;
+        width: 100%;
+        padding: 24px 30px;
+        border-bottom: 1px solid #dedede;
+    }
+    &-body {
+        background-color: $green;
+        color: #fff;
+        text-align: center;
+        &-404 {
+            font-size: 300px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 800;
+            margin-bottom: 60px;
+            padding-top: 117px;
+            margin-right: 135px;
+            &::after {
+                content: "";
+                background-image: url(../images/404.png);
+                width: 157px;
+                height: 301px;
+                position: absolute;
+                margin-left: 5px;
+            }
+        }
+        &-title {
+            font-family: "Open Sans", sans-serif;
+            font-size: 30px;
+            letter-spacing: 6px;
+            margin-bottom: 33px;
+            position: relative;
+        }
+        &-text {
+            max-width: 550px;
+            margin: 0 auto;
+            line-height: 24px;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: "Raleway", sans-serif;
+            margin-bottom: 55px;
+        }
+        &-link {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: "Raleway", sans-serif;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 20px 30px;
+            display: inline-block;
+            border-radius: 4px;
+            border: 2px solid #fff;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+// end page__error
 
 @import "media";
