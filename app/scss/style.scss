@@ -426,6 +426,7 @@
     width: 100%;
     padding-top: 90px;
     padding-bottom: 110px;
+    display: none;
 }
 .login__title {
     text-align: center;
@@ -1413,7 +1414,27 @@ form {
         }
     }
 }
-
 // end page__error
-
+// start page__about
+.page__about{
+    padding-bottom: 150px;
+    background-color: #f4f6f5;
+}
+.page__about-box {
+    padding: 45px 50px 5px;
+}
+.page__about-item {
+    padding-bottom: 55px;
+    &-title {
+        font-weight: 700;
+        color: #444444;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    &-text{
+        line-height: 24px;
+        color: #707070;
+    }
+}
+// end page__about
 @import "media";
