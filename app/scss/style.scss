@@ -1516,43 +1516,43 @@
         left: -40px;
     }
 }
-.contact-box__form-title{
+.contact-box__form-title {
     font-size: 24px;
     font-weight: 500;
     color: #333;
     margin-bottom: 22px;
 }
-.box__form-row{
+.box__form-row {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    input{
+    input {
         height: 43px;
         padding-left: 17px;
         padding-right: 17px;
         background-color: #f1f4f5;
         width: 350px;
         margin-bottom: 30px;
-        &::placeholder{
+        &::placeholder {
             color: #7a7a7a;
         }
     }
 }
-.page__contact-box__form{
+.page__contact-box__form {
     width: 100%;
-    textarea{
+    textarea {
         background-color: #f1f4f5;
         padding: 13px 17px;
-        height: 190px; 
+        height: 190px;
         width: 100%;
         resize: none;
         display: block;
         margin-bottom: 23px;
-        &::placeholder{
+        &::placeholder {
             color: #7a7a7a;
         }
     }
-    button{
+    button {
         color: #fff;
         background-color: $green;
         text-transform: uppercase;
@@ -1562,4 +1562,87 @@
     }
 }
 // end page__contact
+// start settings
+.settings {
+    background-color: #f4f6f5;
+    padding-bottom: 100px;
+}
+.product-one__tabs.settings__tabs {
+    display: flex;
+    .tabs {
+        max-width: 270px;
+        width: 100%;
+        height: 100%;
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #dedede;
+        .tab + .tab {
+            border-top: 1px solid #dedede;
+            border-left: none;
+        }
+        .tab {
+            text-align: left;
+            padding: 17px 0;
+            padding-left: 50px;
+            font-size: 14px;
+            &::before {
+                left: 24px;
+                font-size: 14px;
+                color: #444444;
+            }
+            &.active::before {
+                color: $green;
+            }
+        }
+    }
+    .tab_content {
+        width: 100%;
+        border-top: 1px solid #dedede;
+        padding: 0;
+    }
+}
+.page__box {
+    &-title {
+        padding: 20px 35px;
+        border-bottom: 1px solid #dedede;
+        font-size: 24px;
+        font-weight: 500;
+        color: $bg;
+    }
+}
+.page__box-content {
+    padding: 35px 35px 80px;
+    button{
+        margin-left: 258px;
+        background-color: $green;
+        color: #fff;
+        font-weight: 500;
+        padding: 15px 30px;
+        margin-top: 5px;
+    }
+}
+.settings__line {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    label {
+        color: #444444;
+    }
+    input, select {
+        background-color: #f9f9f9;
+        border: 1px solid #dedede;
+        max-width: 540px;
+        width: 100%;
+        height: 40px;
+        padding: 0 15px;
+    }
+    select{
+        font-size: 14px;
+        color: #707070;
+    }
+}
+// end settings
+
 @import "media";
