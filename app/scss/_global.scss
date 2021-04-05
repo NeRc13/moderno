@@ -119,3 +119,75 @@ body {
         left: 0;
     }
 }
+.envelope-o {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+        content: "\f003";
+        font-family: "icomoon";
+        color: #d0d0d0;
+        font-size: 14px;
+        position: absolute;
+        left: 0;
+    }
+}
+.group {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+        content: "\f0c0";
+        font-family: "icomoon";
+        color: #d0d0d0;
+        font-size: 14px;
+        position: absolute;
+        left: 0;
+    }
+}
+.comment-o {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+        content: "\f0e5";
+        font-family: "icomoon";
+        color: #d0d0d0;
+        font-size: 14px;
+        position: absolute;
+        left: 0;
+    }
+}
+.users {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+        content: "\f007";
+        font-family: "icomoon";
+        color: #d0d0d0;
+        font-size: 14px;
+        position: absolute;
+        left: 0;
+    }
+}
+.briefcase {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+        content: "\f0b1";
+        font-family: "icomoon";
+        color: #d0d0d0;
+        font-size: 14px;
+        position: absolute;
+        left: 0;
+    }
+}
+.comments-o {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+        content: "\f0e6";
+        font-family: "icomoon";
+        color: #d0d0d0;
+        font-size: 14px;
+        position: absolute;
+        left: 0;
+    }
+}

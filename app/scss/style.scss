@@ -1613,7 +1613,7 @@
 }
 .page__box-content {
     padding: 35px 35px 80px;
-    button{
+    button {
         margin-left: 258px;
         background-color: $green;
         color: #fff;
@@ -1630,7 +1630,8 @@
     label {
         color: #444444;
     }
-    input, select {
+    input,
+    select {
         background-color: #f9f9f9;
         border: 1px solid #dedede;
         max-width: 540px;
@@ -1638,11 +1639,166 @@
         height: 40px;
         padding: 0 15px;
     }
-    select{
+    select {
         font-size: 14px;
         color: #707070;
     }
 }
 // end settings
-
+// start profile
+.profile {
+    background-color: #f4f6f5;
+    &__body {
+        display: flex;
+    }
+}
+.profile__aside {
+    max-width: 270px;
+    width: 100%;
+    margin-right: 30px;
+}
+.aside__item.aside__item-profile,
+.footer__item-social.item-social-profile {
+    margin-bottom: 25px;
+}
+.profile-status {
+    position: relative;
+    border: 1px solid #dedede;
+    padding-right: 14px;
+    line-height: 28px;
+    padding-left: 26px;
+    font-size: 13px;
+    color: #70838d;
+    &::before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        position: absolute;
+        top: 9px;
+        left: 11px;
+    }
+    &-on::before {
+        background-color: $green;
+    }
+    &-off::before {
+        background-color: $red;
+    }
+}
+.author__awards-list.frofile__awards-list {
+    margin-top: 11px;
+}
+.profile__aside-btn {
+    margin-bottom: 30px;
+    a {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        display: block;
+        text-align: center;
+        line-height: 54px;
+        box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    }
+    a + a {
+        margin-top: 15px;
+    }
+}
+.profile__aside-message {
+    background-color: $color-text;
+    &::before {
+        content: "\f003";
+        font-family: "icomoon";
+        margin-right: 10px;
+        font-size: 16px;
+    }
+}
+.profile__aside-following {
+    background-color: $green;
+    font-weight: 700;
+}
+.profile__content {
+    width: 100%;
+}
+.product-one__img.profile__img {
+    padding-bottom: 38%;
+}
+.product-one__img-body.profile__img-body {
+    margin-bottom: 30px;
+}
+.profile__content-box {
+    display: flex;
+    width: 100%;
+}
+.profile__content-item {
+    border: 1px solid #dedede;
+    flex: 0 0 25%;
+    width: 100%;
+    text-align: center;
+    line-height: 24px;
+    padding: 15px 10px;
+    background-color: #fff;
+    & + & {
+        border-left: none;
+    }
+    &-title {
+        font-size: 14px;
+        color: $bg;
+        font-weight: 500;
+    }
+    &-info {
+        color: #707070;
+        font-size: 14px;
+    }
+    &-sales {
+        color: $bg;
+    }
+}
+.profile .product-one__tabs.settings__tabs .tabs .tab.active::before {
+    color: $green;
+}
+.profile .product-one__tabs.settings__tabs .tabs .tab::before {
+    color: #d0d0d0;
+}
+.profile__box{
+    padding: 40px 42px 50px;
+    &-title, .profile__body-skills-title{
+        font-weight: 700;
+        font-size: 20px;
+        color: $bg;
+        margin-bottom: 27px;
+    }
+    &-text{
+        color: #707070;
+        line-height: 24px;
+        margin-bottom: 45px;
+    }
+}
+.box-skills-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    &-name{
+        font-size: 16px;
+        font-weight: 500;
+        color: $bg;
+        font-style: italic;
+    }
+    &-percent{
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+.profile__box-skills-line{
+    height: 15px;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    margin-bottom: 23px;
+    span{
+        display: block;
+        height: 15px;
+        background: url(../images/progress.png) repeat-x ;
+        border-radius: 4px;
+    }
+}
+// enf profile
 @import "media";
