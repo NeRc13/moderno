@@ -16,6 +16,20 @@ $(function () {
         arrows: false
     });
 
+    $('input, select').styler({
+        locale: 'en',
+        locales: {
+            'en': {
+                filePlaceholder: 'Choose File',
+                fileBrowse: 'No File Choosen',
+                fileNumber: 'Selected files: %s',
+                selectPlaceholder: 'Select...',
+                selectSearchNotFound: 'No matches found',
+                selectSearchPlaceholder: 'Search...'
+            }
+        },
+    });
+
 
     $('.menu__btn').on('click', function () {
         $('.header__list').slideToggle();

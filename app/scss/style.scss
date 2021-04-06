@@ -1759,46 +1759,169 @@
 .profile .product-one__tabs.settings__tabs .tabs .tab::before {
     color: #d0d0d0;
 }
-.profile__box{
+.profile__box {
     padding: 40px 42px 50px;
-    &-title, .profile__body-skills-title{
+    &-title,
+    .profile__body-skills-title {
         font-weight: 700;
         font-size: 20px;
         color: $bg;
         margin-bottom: 27px;
     }
-    &-text{
+    &-text {
         color: #707070;
         line-height: 24px;
         margin-bottom: 45px;
     }
 }
-.box-skills-head{
+.box-skills-head {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
-    &-name{
+    &-name {
         font-size: 16px;
         font-weight: 500;
         color: $bg;
         font-style: italic;
     }
-    &-percent{
+    &-percent {
         font-size: 16px;
         font-weight: 700;
     }
 }
-.profile__box-skills-line{
+.profile__box-skills-line {
     height: 15px;
     background-color: #f4f4f4;
     border-radius: 4px;
     margin-bottom: 23px;
-    span{
+    span {
         display: block;
         height: 15px;
-        background: url(../images/progress.png) repeat-x ;
+        background: url(../images/progress.png) repeat-x;
         border-radius: 4px;
     }
 }
 // enf profile
+// start upload
+.upload {
+    background-color: #f4f6f5;
+    &__body {
+        background-color: #fff;
+        border: 1px solid #d7d7d7;
+        margin-bottom: 110px;
+        &-title {
+            font-weight: 500;
+            font-size: 24px;
+            color: $bg;
+            border-bottom: 1px solid #d7d7d7;
+            padding: 16px 35px 18px;
+            margin-bottom: 40px;
+        }
+        &-content {
+            margin-bottom: 30px;
+            padding-left: 45px;
+            padding-right: 50px;
+        }
+        button {
+            padding: 15px 36px;
+            color: #fff;
+            background-color: $green;
+            margin-bottom: 65px;
+            font-weight: 500;
+            margin-left: 220px;
+        }
+    }
+}
+.upload__line {
+    margin-bottom: 25px;
+    display: flex;
+    label {
+        max-width: 175px;
+        width: 100%;
+        padding-right: 10px;
+        color: #444;
+        padding-top: 5px;
+        span {
+            color: $green;
+        }
+    }
+    input,
+    select,
+    textarea {
+        display: block;
+        height: 40px;
+        width: 100%;
+        border: 1px solid #d7d7d7;
+        background-color: #f9f9f9;
+        padding-left: 20px;
+        &::placeholder {
+        }
+    }
+    textarea {
+        resize: none;
+        height: 150px;
+        padding-top: 8px;
+    }
+}
+.jq-selectbox {
+    width: 100%;
+
+    &__select-text {
+        background-color: #f9f9f9;
+        border: 1px solid #d7d7d7;
+        height: 40px;
+        color: #707070;
+        line-height: 40px;
+        padding-left: 20px;
+    }
+}
+.jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    line-height: 40px;
+    &::before {
+        font-family: "icomoon";
+        content: "\f0d7";
+    }
+}
+.jq-selectbox__dropdown {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding-left: 20px;
+    color: #707070;
+    ul {
+        overflow: hidden;
+        li {
+            margin-top: 5px;
+            &:hover {
+                background-color: #c9c5c5;
+            }
+        }
+    }
+}
+.jq-file {
+    display: flex;
+    border: 1px solid #d7d7d7;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    padding-left: 9px;
+    background-color: #f9f9f9;
+    &__name {
+        margin-right: 15px;
+        border: 1px solid #d7d7d7;
+        line-height: 24px;
+        padding: 0 12px;
+        font-size: 12px;
+        color: #444;
+        font-weight: 500;
+        background-color: #fff;
+    }
+    &__browse{
+        font-size: 12px;
+        color: #707070;
+    }
+}
+// end upload
 @import "media";
