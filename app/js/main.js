@@ -16,7 +16,7 @@ $(function () {
         arrows: false
     });
 
-    $('input, select').styler({
+    $('input[type="file"], select').styler({
         locale: 'en',
         locales: {
             'en': {
